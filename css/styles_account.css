@@ -9,6 +9,7 @@ body
   background-color: #fafafa;
   height: auto;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -211,12 +212,11 @@ a
   text-align: center;
   margin: 0 0 30px 0;
   padding: 0;
-  font-weight: 200;
 }
 
 .form .form_heading
 {
-  color: #B18167;
+  color: #9D3017;
   text-align: center;
   font-size: 1.5em;
   font-weight: 500;
@@ -226,18 +226,17 @@ a
 .form .form_sub_heading span
 {
   border-bottom: 2px solid black;
-  transition: color 0.5s;
+  transition: 0.5s;
 }
 
 .form .form_sub_heading span:hover
 {
-  border-bottom: 2px solid #F2DCD0;
-  transition: color 0.5s;
+  border-bottom: 2px solid #9D3017;
+  transition: 0.5s;
 }
 
 .left
 {
-  font-weight: 200;
   width: 50%;
   height: auto;
 }
@@ -287,7 +286,6 @@ a
 form
 {
   padding: 30px;
-  font-weight: 200;
 }
 
 form input
@@ -326,7 +324,6 @@ form .fname, form .mname, form .lname, form .mobile, form .email
 
 .footer
 {
-  font-weight: 200;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

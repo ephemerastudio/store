@@ -9,6 +9,7 @@ body
   background-color: #fafafa;
   height: auto;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -280,7 +281,6 @@ a
   padding: 10px 30px 10px 30px;
   text-align: left;
   font-size: 0.7em;
-  font-weight: 200;
   transition: 0.5s;
 }
 
@@ -312,7 +312,6 @@ a
 
 .footer
 {
-  font-weight: 200;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

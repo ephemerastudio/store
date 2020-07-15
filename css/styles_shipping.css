@@ -9,6 +9,7 @@ body
   background-color: #fafafa;
   height: auto;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -194,7 +195,6 @@ a
 .ship_content
 {
   margin: 25% auto 0 auto;
-  font-weight: 200;
 }
 
 .ship_content .ship_heading
@@ -232,7 +232,6 @@ td
 
 .footer
 {
-  font-weight: 200;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

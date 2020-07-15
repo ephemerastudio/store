@@ -9,6 +9,7 @@ body
   background-color: #fafafa;
   height: auto;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -211,13 +212,11 @@ a
 .faq_content .sub_head
 {
   font-size: 1em;
-  font-weight: 200;
   margin-bottom: 30px;
 }
 
 .footer
 {
-  font-weight: 200;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

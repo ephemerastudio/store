@@ -9,6 +9,7 @@ body
   background-color: #fafafa;
   height: auto;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -193,7 +194,6 @@ a
 
 .terms_content
 {
-  font-weight: 200;
   margin: 25% auto 0 auto;
 }
 
@@ -211,7 +211,6 @@ a
 
 .footer
 {
-  font-weight: 200;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

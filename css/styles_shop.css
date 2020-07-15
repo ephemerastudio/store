@@ -9,6 +9,7 @@ body
   background-color: #fafafa;
   height: auto;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
 }
 
@@ -194,7 +195,6 @@ a
 .shop_content
 {
   margin: 25% auto 0 auto;
-  font-weight: 200;
 }
 
 .shop_content .category_1, .shop_content .category_2, .shop_content .category_3
@@ -239,7 +239,6 @@ a
 
 .footer
 {
-  font-weight: 200;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
