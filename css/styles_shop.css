@@ -57,17 +57,6 @@ a
   float: left;
 }
 
-.navbar_cover
-{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 22%;
-  background-color: rgba(250, 250, 250, 0.5);
-  z-index: 1000;
-}
-
 .sidenav {
   font-weight: 200;
   height: 100%;
@@ -91,7 +80,7 @@ a
 }
 
 .sidenav a:hover {
-  color: #4F814F;
+  color: #9D3017;
   transition: color 0.5s;
 }
 
@@ -108,10 +97,22 @@ a
   z-index: -1;
 }
 
-.navbar
+.navbar_cover
 {
   position: fixed;
-  top: 5%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(250, 250, 250, 0.5);
+  z-index: 1000;
+  transition: top 0.5s;
+}
+
+.navbar
+{
+  position: absolute;
+  top: 20%;
   left: 5%;
   width: 90%;
   z-index: 1000;
@@ -119,7 +120,7 @@ a
 
 .active, .current, .now
 {
-  color: #4F814F;
+  color: #9D3017;
 }
 
 .logo
@@ -138,14 +139,16 @@ a
 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.1em;
-	letter-spacing: 6px;
+	letter-spacing: 5px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .flex_icons
 {
-  font-weight: 300;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.8em;
   text-align: center;
   margin-top: 10px;
   display: flex;
@@ -181,7 +184,7 @@ a
 .flex_icons .icon:hover
 {
   cursor: pointer;
-  color: #4F814F;
+  color: #9D3017;
   transition: color 0.5s;
 }
 
@@ -194,8 +197,9 @@ a
 .shop_content .category_1, .shop_content .category_2, .shop_content .category_3
 {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-wrap: wrap;
+  transition: 0.5s;
 }
 
 .category_1 .prod_1, .category_1 .prod_2, .category_1 .prod_3, .category_1 .prod_4, .category_1 .prod_5,
@@ -212,20 +216,22 @@ a
 {
   border-radius: 20px;
   width: 100%;
+  transition: 0.5s;
 }
 
 .heading
 {
-  color: #4F814F;
   font-size: 2em;
   font-weight: 700;
+  transition: 0.5s;
 }
 
 .subheading
 {
-  color: #4F814F;
+  color: #9D3017;
   font-size: 1em;
   font-weight: 500;
+  transition: 0.5s;
 }
 
 .footer
@@ -259,7 +265,7 @@ a
 
 .footer-links ul li a:hover
 {
-  color: #4F814F;
+  color: #9D3017;
   transition: color .5s;
 }
 
@@ -291,6 +297,7 @@ a
   .shop_content
   {
     margin-top: 30%;
+    transition: 0.5s;
   }
 }
 
@@ -304,6 +311,7 @@ a
   .shop_content
   {
     margin-top: 35%;
+    transition: 0.5s;
   }
 }
 
@@ -317,6 +325,7 @@ a
   .shop_content
   {
     margin-top: 50%;
+    transition: 0.5s;
   }
 }
 
@@ -325,6 +334,7 @@ a
   .navbar_cover
   {
     height: 35%;
+    transition: 0.5s;
   }
 }
 
@@ -353,6 +363,7 @@ a
   .shop_content
   {
     margin-top: 45%;
+    transition: 0.5s;
   }
 }
 
@@ -366,11 +377,13 @@ a
   .sidenav
   {
     text-align: left;
+    transition: 0.5s;
   }
 
   .shop_content
   {
     margin-top: 50%;
+    transition: 0.5s;
   }
 }
 
@@ -379,6 +392,7 @@ a
   .navbar_cover
   {
     height: 32%;
+    transition: 0.5s;
   }
 }
 
@@ -392,11 +406,13 @@ a
   .navbar_cover
   {
     height: 24%;
+    transition: 0.5s;
   }
 
   .shop_content
   {
     margin-top: 60%;
+    transition: 0.5s;
   }
 }
 
@@ -410,6 +426,7 @@ a
   .shop_content
   {
     margin-top: 70%;
+    transition: 0.5s;
   }
 }
 
@@ -418,5 +435,6 @@ a
   .navbar_cover
   {
     height: 28%;
+    transition: 0.5s;
   }
 }

@@ -55,18 +55,6 @@ a
   float: left;
 }
 
-.navbar_cover
-{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background-color: rgba(250, 250, 250, 0.5);
-  z-index: 1000;
-  transition: top 0.5s;
-}
-
 .sidenav {
   font-weight: 200;
   height: 100%;
@@ -106,6 +94,18 @@ a
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.navbar_cover
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(250, 250, 250, 0.5);
+  z-index: 1000;
+  transition: top 0.5s;
 }
 
 .navbar
@@ -267,6 +267,7 @@ a
 
 .paper p, .paperless p, .journal p
 {
+  color: #9D3017;
   padding: 10px 30px 10px 30px;
   text-align: left;
   font-size: 0.7em;
