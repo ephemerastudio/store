@@ -462,6 +462,15 @@ a
   }
 }
 
+@media only screen and (max-width: 800px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 35%;
+    transition: 0.5s;
+  }
+}
+
 @media only screen and (max-width: 719px)
 {
   .flex_icons .home, .flex_icons .shop, .flex_icons .person, .flex_icons .faq,
@@ -576,6 +585,15 @@ a
   }
 }
 
+@media only screen and (max-width: 600px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 32%;
+    transition: 0.5s;
+  }
+}
+
 @media only screen and (max-width: 510px)
 {
   .products .heading
@@ -623,6 +641,12 @@ a
     border: 3px solid black;
     transition: 0.5s;
   }
+
+  .navbar_cover
+  {
+    height: 24%;
+    transition: 0.5s;
+  }
 }
 
 @media only screen and (max-width: 461px)
@@ -630,6 +654,12 @@ a
   .paper ,.paperless, .journal
   {
     width: 350px;
+  }
+
+  .navbar_cover
+  {
+    height: 24%;
+    transition: 0.5s;
   }
 
   .products .image
@@ -725,5 +755,14 @@ a
   .paper .subheading, .paperless .subheading, .journal .subheading
   {
     font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 28%;
+    transition: 0.5s;
   }
 }
