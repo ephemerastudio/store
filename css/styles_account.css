@@ -1,0 +1,538 @@
+html
+{
+  overflow-x: hidden;
+}
+
+body
+{
+  margin: 0;
+  background-color: #fafafa;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+a
+{
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.back_top
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: visible;
+}
+
+.back_bottom
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: visible;
+}
+
+.body_content
+{
+  animation: smoothload 1s;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.logo_icon
+{
+  float: left;
+}
+
+.navbar_cover
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22%;
+  background-color: rgba(250, 250, 250, 0.5);
+  z-index: 1000;
+}
+
+.sidenav {
+  font-weight: 200;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  font-size: 1em;
+  padding: 8px 8px 8px 30px;
+  display: block;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.sidenav a:hover {
+  color: #4F814F;
+  transition: color 0.5s;
+}
+
+.sidenav
+{
+  display: none;
+}
+
+.nav_back
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.navbar
+{
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  z-index: 1000;
+}
+
+.active, .current
+{
+  color: #4F814F;
+}
+
+.logo
+{
+	position: absolute;
+}
+
+.ephemera
+{
+  letter-spacing: 4px;
+	font-family: 'Six Caps', sans-serif;
+	font-size: 2.2em;
+}
+
+.studios
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1em;
+	letter-spacing: 6px;
+}
+
+.flex_icons
+{
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.icon
+{
+  margin-left: 60px;
+  transition: color 0.5s;
+}
+
+.close img
+{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 30px;
+}
+
+.flex_icons .menu
+{
+  display: none;
+}
+
+.flex_icons .icon img
+{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.flex_icons .icon:hover
+{
+  cursor: pointer;
+  color: #4F814F;
+  transition: color 0.5s;
+}
+
+.form
+{
+  padding: 50px;
+  max-width: 80%;
+  height: 30%;
+  margin: 20% auto 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.form_heading
+{
+  margin: 0;
+  padding: 0;
+}
+
+.form_sub_heading
+{
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-weight: 200;
+}
+
+.form .form_heading
+{
+  color: #B18167;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form .form_sub_heading span
+{
+  border-bottom: 2px solid black;
+  transition: color 0.5s;
+}
+
+.form .form_sub_heading span:hover
+{
+  border-bottom: 2px solid #F2DCD0;
+  transition: color 0.5s;
+}
+
+.left
+{
+  font-weight: 200;
+  width: 50%;
+  height: auto;
+}
+
+.left .image
+{
+  height: 90%;
+  width: 90%;
+}
+
+.left img
+{
+  border-radius: 20px;
+  width: 100%;
+}
+
+.subscribe
+{
+  margin-top: 40px;
+}
+
+.subscribe_sub
+{
+  padding: 10px;
+  font-weight: 300;
+  border-radius: 10px;
+  background-color: #DEB6A0;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.right
+{
+  width: 50%;
+  height: auto;
+}
+
+.signup_form
+{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  text-align: left;
+}
+
+form
+{
+  padding: 30px;
+  font-weight: 200;
+}
+
+form input
+{
+  border: none;
+  background-color: #F7F1ED;
+  height: 40px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+form .submit
+{
+  margin-top: 20px;
+  border: none;
+  background-color: #DEB6A0;
+  height: 40px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+form input:focus, form .submit:focus
+{
+  outline-color: #DEB6A0;
+}
+
+form span
+{
+  color: red;
+}
+
+form .fname, form .mname, form .lname, form .mobile, form .email
+{
+  margin-bottom: 20px;
+}
+
+.footer
+{
+  font-weight: 200;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 0.7em;
+  width: 90%;
+  margin: 10% auto 3% auto;
+}
+
+.footer-links ul
+{
+  list-style: none;
+}
+
+.footer-links ul li
+{
+  list-style: none;
+  display: inline;
+  padding-right: 15px;
+}
+
+.footer-links ul li a
+{
+  letter-spacing: 1px;
+  transition: color .5s;
+}
+
+.footer-links ul li a:hover
+{
+  color: #4F814F;
+  transition: color .5s;
+}
+
+.footer-payment
+{
+  padding-top: 10px;
+  padding-left: 10%;
+}
+
+@keyframes smoothload
+{
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1080px)
+{
+  .body_content, .wrapper
+  {
+    overflow-x: hidden;
+  }
+
+}
+
+@media only screen and (max-width: 1000px)
+{
+  .form
+  {
+    margin-top: 30%;
+  }
+
+}
+
+@media only screen and (max-width: 900px)
+{
+  .body_content, .wrapper
+  {
+    overflow-x: hidden;
+  }
+
+  .form
+  {
+    margin-top: 35%;
+  }
+}
+
+@media only screen and (max-width: 800px)
+{
+  .body_content, .wrapper
+  {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 35%;
+  }
+
+  .form
+  {
+    margin-top: 45%;
+  }
+}
+
+@media only screen and (max-width: 700px)
+{
+  .body_content, .wrapper
+  {
+    overflow-x: hidden;
+  }
+
+  .flex_icons .menu
+  {
+    display: block;
+  }
+
+  .sidenav
+  {
+    display: block;
+  }
+
+  .flex_icons .home, .search, .shop, .faq, .cart, .person
+  {
+    display: none;
+  }
+
+  .left, .right
+  {
+    width: 100%;
+  }
+
+  .left .image
+  {
+    width: 100%;
+  }
+
+  .image
+  {
+    margin-bottom: 30%;
+  }
+
+  .form
+  {
+    margin-top: 40%;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .body_content, .wrapper
+  {
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  .sidenav
+  {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .form
+  {
+    margin-top: 40%;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 32%;
+  }
+}
+
+@media only screen and (max-width: 500px)
+{
+  .body_content, .wrapper
+  {
+    overflow-x: hidden;
+  }
+
+  .navbar_cover
+  {
+    height: 24%;
+  }
+
+  .form
+  {
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 400px)
+{
+  .body_content, .wrapper
+  {
+    overflow-x: hidden;
+  }
+
+  .form
+  {
+    margin-top: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape)
+{
+  .navbar_cover
+  {
+    height: 28%;
+  }
+}
