@@ -237,12 +237,19 @@ a
   transition: 0.5s;
 }
 
-.products img
+.products .image
 {
   border-radius: 20px;
   width: 450px;
+  height: 450px;
   margin: 30px;
   transition: 0.5s;
+}
+
+.products img
+{
+  width: 100%;
+  border-radius: 20px;
 }
 
 .category_paper, .category_journal, .category_paperless
@@ -356,9 +363,11 @@ a
 
 @media only screen and (max-width: 1019px)
 {
-  .products img
+  .products .image
   {
     width: 350px;
+    height: 350px;
+    transition: 0.5s;
   }
 
   .paper, .paperless, .journal
@@ -389,9 +398,10 @@ a
 
 @media only screen and (max-width: 819px)
 {
-  .products img
+  .products .image
   {
     width: 300px;
+    height: 300px;
     transition: 0.5s;
   }
 
@@ -510,9 +520,10 @@ a
     margin-top: 0;
   }
 
-  .products img
+  .products .image
   {
     width: 500px;
+    height: 500px;
     transition: 0.5s;
   }
 }
@@ -551,9 +562,15 @@ a
     margin-top: 60%;
   }
 
-  .products img, .paper ,.paperless, .journal
+  .paper ,.paperless, .journal
   {
     width: 450px;
+  }
+
+  .products .image
+  {
+    width: 450px;
+    height: 450px;
   }
 }
 
@@ -570,9 +587,15 @@ a
     margin-top: 60%;
   }
 
-  .products img, .paper ,.paperless, .journal
+  .paper ,.paperless, .journal
   {
     width: 400px;
+  }
+
+  .products .image
+  {
+    width: 400px;
+    height: 400px;
   }
 
   .intro
@@ -602,9 +625,15 @@ a
 
 @media only screen and (max-width: 461px)
 {
-  .products img, .paper ,.paperless, .journal
+  .paper ,.paperless, .journal
   {
     width: 350px;
+  }
+
+  .products .image
+  {
+    width: 350px;
+    height: 350px;
   }
 
   .products .heading
@@ -616,9 +645,15 @@ a
 
 @media only screen and (max-width: 409px)
 {
-  .products img, .paper ,.paperless, .journal
+  .paper ,.paperless, .journal
   {
     width: 250px;
+  }
+
+  .products .image
+  {
+    width: 250px;
+    height: 250px;
   }
 
   .products .heading
@@ -651,9 +686,15 @@ a
 
 @media only screen and (max-width: 309px)
 {
-  .products img, .paper ,.paperless, .journal
+  .paper ,.paperless, .journal
   {
     width: 240px;
+  }
+
+  .products .image
+  {
+    width: 240px;
+    height: 240px;
   }
 
   .products .heading
