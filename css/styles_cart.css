@@ -58,29 +58,32 @@ a
   float: left;
 }
 
-.sidenav {
-  font-weight: 200;
+.sidenav
+{
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 40px;
 }
 
-.sidenav a {
+.sidenav a
+{
   font-size: 1em;
+  font-weight: 700;
   padding: 8px 8px 8px 30px;
   display: block;
   text-transform: uppercase;
   transition: color 0.5s;
 }
 
-.sidenav a:hover {
+.sidenav a:hover
+{
   color: #9D3017;
   transition: color 0.5s;
 }
