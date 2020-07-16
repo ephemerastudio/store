@@ -398,12 +398,20 @@ form
 .signup_form .close
 {
   color: black;
-  font-weight: bold;
+  font-weight: 700;
+  float: right;
 }
 
 .close:hover,.close:focus
 {
   cursor: pointer;
+  color: #9D3017;
+  transition: color 0.5s;
+}
+
+.forgot
+{
+  color: #9D3017;
 }
 
 .animate

@@ -102,7 +102,7 @@
                 <input class = "username" type = "text" name = "" placeholder = "Username">
                 <label for = "password">Password<span> *</span></label>
                 <input class = "password" type = "password" name = "" placeholder = "Password">
-                <label for = "fname">Mobile Number</label>
+                <label for = "fname">Mobile Number<span> *</span></label>
                 <input class = "mobile" type = "tel" name = "" placeholder = "Mobile Number">
                 <label for = "fname">Email Address<span> *</span></label>
                 <input class = "email" type = "email" name = "" placeholder = "Email Address">
@@ -120,6 +120,8 @@
             </div>
             <div class = "right">
               <div class = "signup_form">
+                <span onclick = "document.getElementById('signin_wrapper').style.display='none'" class = "close" title = "Close Pop-Up">CLOSE</span>
+                <br><br>
                 <form action = "action.php" method = "post">
                   <label for = "uname">Username</label>
                   <input class = "fname" type = "text" name = "" placeholder = "Username">
@@ -127,9 +129,8 @@
                   <input class = "mname" type = "text" name = "" placeholder = "Password">
                   <button class = "submit" type = "submit" name = "button">SIGN IN</button>
                   <input type = "checkbox">Remember me<br>
-                  <a href = "#">Forgot password?</a>
+                  <a class = "forgot" href = "#">Forgot password?</a>
                   <br>
-                  <span onclick = "document.getElementById('signin_wrapper').style.display='none'" class = "close" title = "Close PopUp">CLOSE</span>
                 </form>
               </div>
               <div class = "flex_social">
