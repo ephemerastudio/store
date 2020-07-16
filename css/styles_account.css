@@ -324,7 +324,7 @@ form
   color: red;
 }
 
-.signup_form form .fname, .signup_form form .mname, .signup_form form .lname, .signup_form form .mobile, .signup_form form .email,
+.signup_form form .fname, .signup_form form .password, .signup_form form .username, .signup_form form .lname, .signup_form form .mobile, .signup_form form .email,
 .signin_form form .uname, .signin_form form .password
 {
   margin-bottom: 20px;
