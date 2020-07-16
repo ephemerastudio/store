@@ -395,6 +395,16 @@ form
   margin: 0 15px;
 }
 
+.signup_form .close
+{
+  color: black;
+  font-weight: bold;
+}
+
+.close:hover,.close:focus
+{
+  cursor: pointer;
+}
 
 .animate
 {
