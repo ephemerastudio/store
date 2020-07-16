@@ -81,6 +81,8 @@
       </div>
       <img class = "back_top" src = "images/back-top-1.svg">
       <div class = "body_content">
+        <p class = "heading">create an account.</p>
+        <p class = "subheading">(Already a member? Sign in <span><a onclick = "document.getElementById('signin_wrapper').style.display = 'block'">here</a></span>!)</p>
         <div class = "form">
           <div class = "left">
             <div class = "image">
@@ -90,22 +92,48 @@
             </div>
           </div>
           <div class = "right">
-            <p class = "form_heading">create an account.</p>
-            <p class = "form_sub_heading">(Already a member? Sign in <span><a href = "">here</a></span>!)</p>
             <div class = "signup_form">
               <form action = "action.php" method = "post">
-                <label for="fname">First Name<span> *</span></label>
+                <label for = "fname">First Name<span> *</span></label>
                 <input class = "fname" type = "text" name = "" placeholder = "First Name">
-                <label for="fname">Middle Name</label>
+                <label for = "fname">Middle Name</label>
                 <input class = "mname" type = "text" name = "" placeholder = "Middle Name">
-                <label for="fname">Last Name<span> *</span></label>
+                <label for = "fname">Last Name<span> *</span></label>
                 <input class = "lname" type = "text" name = "" placeholder = "Last Name">
                 <label for = "fname">Mobile Number</label>
                 <input class = "mobile" type = "tel" name = "" placeholder = "Mobile Number">
                 <label for = "fname">Email Address<span> *</span></label>
                 <input class = "email" type = "email" name = "" placeholder = "Email Address">
-                <button class = "submit"type = "submit" name = "button">SUBMIT</button>
+                <button class = "submit" type = "submit" name = "button">SUBMIT</button>
               </form>
+            </div>
+          </div>
+        </div>
+        <div id = "signin_wrapper" class = "signin_wrapper">
+          <div id = "signin_form" class = "signin_form animate">
+            <div class = "left">
+              <div class = "image">
+                <img class = "paper_2" src = "images/paper-3.png">
+              </div>
+            </div>
+            <div class = "right">
+              <div class = "signup_form">
+                <form action = "action.php" method = "post">
+                  <label for = "uname">Username</label>
+                  <input class = "fname" type = "text" name = "" placeholder = "Username">
+                  <label for = "pass">Password</label>
+                  <input class = "mname" type = "text" name = "" placeholder = "Password">
+                  <button class = "submit" type = "submit" name = "button">SIGN IN</button>
+                  <input type = "checkbox">Remember me<br>
+                  <a href = "#">Forgot password?</a>
+                </form>
+              </div>
+              <div class = "flex_social">
+                <a href = ""><img src = "images/globe.svg"></a>
+                <a href = ""><img src = "images/instagram.svg"></a>
+                <a href = ""><img src = "images/tumblr.svg"></a>
+                <a href = ""><img src = "images/pinterest.svg"></a>
+              </div>
             </div>
           </div>
         </div>

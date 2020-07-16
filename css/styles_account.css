@@ -191,48 +191,54 @@ a
   transition: color 0.5s;
 }
 
+.body_content
+{
+  margin-top: 25%;
+}
+
 .form
 {
   padding: 50px;
   max-width: 80%;
   height: 30%;
-  margin: 20% auto 0 auto;
+  margin: 0 auto 0 auto;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.form_heading
+.heading
 {
   margin: 0;
   padding: 0;
 }
 
-.form_sub_heading
+.subheading
 {
   text-align: center;
   margin: 0 0 30px 0;
   padding: 0;
 }
 
-.form .form_heading
+.heading
 {
   color: #9D3017;
   text-align: center;
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 2.5em;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.form .form_sub_heading span
+.subheading span
 {
   border-bottom: 2px solid black;
   transition: 0.5s;
 }
 
-.form .form_sub_heading span:hover
+.subheading span:hover
 {
   border-bottom: 2px solid #9D3017;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .left
@@ -288,7 +294,7 @@ form
   padding: 30px;
 }
 
-form input
+.signup_form form input
 {
   border: none;
   background-color: #F7F1ED;
@@ -297,7 +303,7 @@ form input
   width: 100%;
 }
 
-form .submit
+.signup_form form .submit
 {
   margin-top: 20px;
   border: none;
@@ -307,19 +313,92 @@ form .submit
   width: 100%;
 }
 
-form input:focus, form .submit:focus
+.signup_form form input:focus, form .submit:focus
 {
   outline-color: #DEB6A0;
 }
 
-form span
+
+.signup_form form span
 {
   color: red;
 }
 
-form .fname, form .mname, form .lname, form .mobile, form .email
+.signup_form form .fname, .signup_form form .mname, .signup_form form .lname, .signup_form form .mobile, .signup_form form .email,
+.signin_form form .uname, .signin_form form .password
 {
   margin-bottom: 20px;
+}
+
+.signin_wrapper
+{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10000000;
+}
+
+.signin_form
+{
+  width: 70%;
+  padding: 50px;
+  margin: 20% auto 20% auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.signin_form .signup_form form
+{
+  padding: 0;
+}
+
+.signin_form form input
+{
+  border: none;
+  background-color: #F7F1ED;
+  height: 40px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.signup_form input[type = "checkbox"]
+{
+  height: 15px;
+  width: 15px;
+}
+
+.signin_form button
+{
+  margin-bottom: 10%;
+}
+
+.signin_form .flex_social
+{
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.signin_form .flex_social a
+{
+  margin: 0 15px;
+}
+
+
+.animate
+{
+  animation: zoom 0.3s;
 }
 
 .footer
@@ -362,6 +441,18 @@ form .fname, form .mname, form .lname, form .mobile, form .email
   padding-left: 10%;
 }
 
+@keyframes zoom
+{
+  from
+  {
+    transform: scale(0);
+  }
+  to
+  {
+    transform: scale(1);
+  }
+}
+
 @keyframes smoothload
 {
   from
@@ -385,7 +476,7 @@ form .fname, form .mname, form .lname, form .mobile, form .email
 
 @media only screen and (max-width: 1000px)
 {
-  .form
+  .body_content
   {
     margin-top: 30%;
   }
@@ -399,7 +490,7 @@ form .fname, form .mname, form .lname, form .mobile, form .email
     overflow-x: hidden;
   }
 
-  .form
+  .body_content
   {
     margin-top: 35%;
   }
@@ -420,7 +511,7 @@ form .fname, form .mname, form .lname, form .mobile, form .email
     height: 35%;
   }
 
-  .form
+  .body_content
   {
     margin-top: 45%;
   }
@@ -451,22 +542,31 @@ form .fname, form .mname, form .lname, form .mobile, form .email
   .left, .right
   {
     width: 100%;
+    transition: 0.5s;
   }
 
   .left .image
   {
     width: 100%;
+    transition: 0.5s;
   }
 
   .image
   {
-    margin-bottom: 30%;
+    margin-bottom: 20%;
+    transition: 0.5s;
+  }
+
+  .body_content
+  {
+    margin-top: 40%;
+    transition: 0.5s;
   }
 
   .form
   {
-    margin-top: 40%;
     flex-direction: column;
+    transition: 0.5s;
   }
 }
 
@@ -481,15 +581,23 @@ form .fname, form .mname, form .lname, form .mobile, form .email
   .sidenav
   {
     text-align: left;
+    transition: 0.5s;
   }
 }
 
 @media only screen and (max-width: 600px)
 {
-  .form
+  .body_content
   {
     margin-top: 40%;
     flex-direction: column;
+    transition: 0.5s;
+  }
+
+  .body_content .heading
+  {
+    font-size: 2em;
+    transition: 0.5s;
   }
 }
 
@@ -498,6 +606,7 @@ form .fname, form .mname, form .lname, form .mobile, form .email
   .navbar_cover
   {
     height: 32%;
+    transition: 0.5s;
   }
 }
 
@@ -511,11 +620,19 @@ form .fname, form .mname, form .lname, form .mobile, form .email
   .navbar_cover
   {
     height: 24%;
+    transition: 0.5s;
   }
 
-  .form
+  .body_content
   {
     margin-top: 50%;
+    transition: 0.5s;
+  }
+
+  .body_content .heading
+  {
+    font-size: 1.8em;
+    transition: 0.5s;
   }
 }
 
@@ -526,9 +643,16 @@ form .fname, form .mname, form .lname, form .mobile, form .email
     overflow-x: hidden;
   }
 
-  .form
+  .body_content
   {
     margin-top: 60%;
+    transition: 0.5s;
+  }
+
+  .body_content .heading
+  {
+    font-size: 1.6em;
+    transition: 0.5s;
   }
 }
 
@@ -537,5 +661,6 @@ form .fname, form .mname, form .lname, form .mobile, form .email
   .navbar_cover
   {
     height: 28%;
+    transition: 0.5s;
   }
 }
