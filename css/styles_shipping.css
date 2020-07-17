@@ -236,6 +236,7 @@ td
   flex-wrap: wrap;
   flex-direction: row;
   font-size: 0.7em;
+  font-weight: 500;
   width: 90%;
   margin: 10% auto 3% auto;
 }
